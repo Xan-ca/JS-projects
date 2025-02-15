@@ -1,3 +1,4 @@
+
 :root {
     /*base varriables*/
     --full-height: 695px; 
@@ -14,9 +15,17 @@
     --info-bar-height: 50px;
     --info-bar-width: 1536px;
     --timer-width: 100px;
-    --word-count-box-width: 300px;
-
+    --word-count-box-width: 310px;
+    --std-font: monospace , sans-serif;
 }
+input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+    font-size: 16px;
+    padding: 5px;
+    background: none; /* Remove background */
+}
+
 
 body{
     height: var(--full-height);
@@ -109,14 +118,14 @@ body{
                 align-items: center;
                 text-align: center;
                 color: rgb(218, 232, 232);
-                font-family: sans-serif;
+                font-family: var(--std-font);
                 font-size: 2.4rem;
             }
             #type-content-word-count{
                 align-items: center;
                 text-align: center;
                 color: rgb(227, 237, 237);
-                font-family: sans-serif;
+                font-family: var(--std-font);
                 font-size: 2.4rem;
             } 
         }
@@ -127,22 +136,24 @@ body{
         
         height: 320px ;
         width: 1200px ;
-       
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: flex-start;
-        overflow: hidden;
+        overflow: auto;
+    }
+    #type-content-one::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
       }
-      
 }
 .type-cont-word{
     height: 70px ;
     width: auto ;
     padding: 5px ;
     font-size: 2.4rem ;
-    color: aliceblue ;
-    font-family: sans-serif;
+    color: rgba(240, 248, 255, 0.547) ;
+    user-select: none;
+    font-family: var(--std-font);
 }
 #type-input-box{
     height: 60px;
@@ -157,25 +168,28 @@ body{
         height: 60px;
         width: auto;
         flex: 0.4;
+        font-family: var(--std-font);
         padding-top:10px ;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         text-align: center;
         align-items: center;
         color: aliceblue ;
-        font-family: sans-serif;
+        
         
     }
     #type-input{
         height: 60px;
         width: 800px;
-        flex: 0.3;
+        flex: 0.25;
         padding: none;
+        border-bottom: 2px solid white; /* Black underline */
+        padding-bottom: 5px;
+        font-family: var(--std-font);
         font-size: 2.4rem; 
         align-items: center; 
         background-color: rgba(240, 248, 255, 0);
         color: aliceblue ;
-        font-family: sans-serif;
-       
+
     }
     #type-input:focus{
         outline: none;
