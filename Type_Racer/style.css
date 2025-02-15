@@ -1,0 +1,183 @@
+:root {
+    /*base varriables*/
+    --full-height: 695px; 
+    --full-width: 1536px; 
+    --darkmode-colour:rgb(44, 47, 50);
+    --base-font-size: 16px; 
+    --std-vertical-spacing:15px;
+    --header-width: 1536px;
+    --header-height: 70px;
+    --header-left-width: 270px;
+    --header-left-height: 70px;
+    --header-right-width: 290px;
+    --header-right-height: 70px;  
+    --info-bar-height: 50px;
+    --info-bar-width: 1536px;
+    --timer-width: 100px;
+    --word-count-box-width: 300px;
+
+}
+
+body{
+    height: var(--full-height);
+    width: var(--full-width); 
+    margin: 0;
+    background-color:var(--darkmode-colour);
+    padding: 0px;
+}
+
+.app-contents{
+    height: var(--full-height);
+    width: var(--full-width);  
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #app-contents-header{
+        width: var(--header-width);
+        height: var(--header-height);
+        margin-top: var(--std-vertical-spacing);
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        #header-left{
+            width: var(--header-left-width);
+            height: var(--header-left-height);
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            #header-icon-app{
+                height: 16px;
+                width: 16px;
+            }
+            #header-icon-reset{
+                height: 16px;
+                width: 16px;
+            }
+           
+        }
+        #header-blank-space{
+            flex:0.2;
+        }
+        #header-right{
+            width: var(--header-right-width);
+            height: var(--header-right-height);      
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        
+        
+    }
+    #type-content-info-bar{
+        height: var(--info-bar-height);
+        width: var(--info-bar-width);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: var(--std-vertical-spacing);
+        
+        gap: 60px;
+        #type-content-timer{
+            height: var(--info-bar-height);
+            width: var(--timer-width);
+            align-items: center;
+            text-align: center;
+            color: rgb(218, 232, 232);
+            font-family: sans-serif;
+            font-size: 2.4rem;
+        }
+        #word-count-box{
+            height: var(--info-bar-height);
+            width: var(--word-count-box-width);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding-right: 10px;
+            #word-count-label{
+                align-items: center;
+                text-align: center;
+                color: rgb(218, 232, 232);
+                font-family: sans-serif;
+                font-size: 2.4rem;
+            }
+            #type-content-word-count{
+                align-items: center;
+                text-align: center;
+                color: rgb(227, 237, 237);
+                font-family: sans-serif;
+                font-size: 2.4rem;
+            } 
+        }
+        
+
+    }
+    #type-content-one {
+        
+        height: 320px ;
+        width: 1200px ;
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: hidden;
+      }
+      
+}
+.type-cont-word{
+    height: 70px ;
+    width: auto ;
+    padding: 5px ;
+    font-size: 2.4rem ;
+    color: aliceblue ;
+    font-family: sans-serif;
+}
+#type-input-box{
+    height: 60px;
+    width: 1200px;
+    gap: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    #type-input-label{
+        height: 60px;
+        width: auto;
+        flex: 0.4;
+        padding-top:10px ;
+        font-size: 2.5rem;
+        text-align: center;
+        align-items: center;
+        color: aliceblue ;
+        font-family: sans-serif;
+        
+    }
+    #type-input{
+        height: 60px;
+        width: 800px;
+        flex: 0.3;
+        padding: none;
+        font-size: 2.4rem; 
+        align-items: center; 
+        background-color: rgba(240, 248, 255, 0);
+        color: aliceblue ;
+        font-family: sans-serif;
+       
+    }
+    #type-input:focus{
+        outline: none;
+    }
+}

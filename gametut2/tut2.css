@@ -1,0 +1,22 @@
+#canvas2{
+    border: 5px solid black;
+   width: 800px;
+   height: 700px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+
+#c{
+    position: relative;
+    top :750px;
+   display: flex;
+   text-align: center;
+    width: 100%;
+    justify-content: center;
+    transform: translate(-0%,-50%);
+}
+#slider{
+    width: 750px;
+}
